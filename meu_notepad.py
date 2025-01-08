@@ -10,7 +10,7 @@ def main(page: ft.Page):
     page.window_height = 500
     page.window_resizable = True
     page.theme_mode = 'dark'
-    page.bgcolor = '#2E2E2E'  # Cor de fundo da página
+    page.bgcolor = '#2E2E2E' 
     page.update()
  
     # Campo de texto multilinha
@@ -18,7 +18,7 @@ def main(page: ft.Page):
         multiline=True,
         border_width=0,
         autofocus=True,
-        text_style=ft.TextStyle(color='#FFFFFF')  # Cor do texto digitado
+        text_style=ft.TextStyle(color='#FFFFFF') 
     )
 
     # Função para salvar o conteúdo em um arquivo de texto
@@ -33,7 +33,7 @@ def main(page: ft.Page):
     page.appbar = ft.AppBar(
         title=ft.Text("Rafael Notepad", color='#000000'),
         center_title=True,
-        bgcolor='#D5006D'  # Cor de fundo da AppBar
+        bgcolor='#D5006D' 
     )
     
     # Menu de navegação
@@ -41,7 +41,7 @@ def main(page: ft.Page):
         expand=True,
         style=ft.MenuStyle(
             alignment=ft.alignment.top_left,
-            bgcolor='#D5006D',  # Cor de fundo do menu
+            bgcolor='#D5006D',  
             mouse_cursor={ft.MaterialState.HOVERED: ft.MouseCursor.WAIT, 
                           ft.MaterialState.DEFAULT: ft.MouseCursor.ZOOM_OUT},
         ),
